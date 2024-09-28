@@ -10,9 +10,7 @@ while len(word_in_password) < 7:
     word_in_password = input("Word : ")
 else:
     char_list = list(word_in_password)
-    # Swap characters at index 2 and index 6
     char_list[2], char_list[6], char_list[4] = char_list[6], char_list[4], char_list[2]
-    # Convert list back to string
     word_in_2 = "".join(char_list)
     print(word_in_2)
 
